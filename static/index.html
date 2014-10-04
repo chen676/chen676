@@ -1,57 +1,120 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <title>getlikes()</title>
-    <style>
-    a:link{
-    	text-decoration:none;
-    	color:#000000;
-    }
-    a:visited{
-    	color:#000000;
-    }
-    p#name {
-    	font-size:550%;
-    	text-align:center;
-    	font-family:Georgia,serif;
-    	margin:20%;
-    }
-    footer{
-    	text-align:center;
-    	font-family:Verdana, Geneva, sans-serif;
-    	font-size:150%;
-    	clear:both;
-    }
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>getLikes Login</title>
+    <meta charset="UTF-8">
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+    <style type="text/css">
+        @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            text-align: center;
+        }
+        
+        p {
+            margin: 0px 0px 0px 0px;
+        }
+        
+        .blue_text {
+            color: #3B5998;
+        }
+        
+        #login_button {
+            width: 400px;
+            height: 50px;
+            overflow: hidden;
+            margin: 150px auto 0px auto;
+            
+            cursor: pointer;
+        }
+        
+        #login_button:hover #app_label{
+            margin-top: -50px;
+            
+            transition-duration: 0.5s;
+            -moz-transition-duration: 0.5s;
+            -webit-transition-duration: 0.5s;
+        }
+        
+        #login_label {
+            font-size: 36px;
+        }
+        
+        #app_label {
+            display: block;
+            font-size: 42px;
+            
+            transition-duration: 0.5s;
+            -moz-transition-duration: 0.5s;
+            -webit-transition-duration: 0.5s;
+        }
     </style>
-  </head>
-  <body>
-  	<!--bgcolor="#ADD6FF" is baby blue-->
-  	<!--<p id="name">
-  		<strong>get
-	  	<font face="Verdana, Geneva, sans-serif" color="#3B5998">likes</font>
-	  	() </strong>
-  	</p>-->
+</head>
+<body>
+    
+    <script>
+        window.fbAsyncInit = function() 
+        {
+            FB.init({
+            appId      : '1557277457835280',
+            cookie     : true,
+            xfbml      : true,
+            version    : 'v2.1'
+            });
 
-  	<p id="name"><a href="login.html"><img src="logo1.jpg"></a></p>
-
-  	<footer><a href="about.html">about us</a></footer>
-
-
-
-
-  	<!--
-  	<p title="about getlikes()">
-  		we help you maximize the number of likes you get on facebook. <br/>
-  		<b>in other words, we make you more liked! :)
-  	</p>
-  	
-  	<form action='/api/meow' method="POST">
-  		Name:
-  		<input name="name" type="text" />
-  		Meow:
-  		<input name="meow" type="text" />
-  		<input type="submit" />
-  	</form>
-  	-->
-  </body>
+            // Now that we've initialized the JavaScript SDK, we call 
+            // FB.getLoginStatus().  This function gets the state of the
+            // person visiting this page and can return one of three states to
+            // the callback you provide.  They can be:
+            //
+            // 1. Logged into your app ('connected')
+            // 2. Logged into Facebook, but not your app ('not_authorized')
+            // 3. Not logged into Facebook and can't tell if they are logged into
+            //    your app or not.
+            //
+            // These three cases are handled in the callback function.
+            
+            FB.getLoginStatus(function(response) 
+            {
+                
+            });
+            
+            FB.login(function(response)
+            {
+                
+            });
+        };
+        
+        // Load the SDK asynchronously
+        (function(d, s, id) 
+        {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        
+        function statusChangeCallback(response) 
+        {
+            console.log('statusChangeCallback');
+            console.log(response);
+            
+            // The response object is returned with a status field that lets the
+            // app know the current login status of the person.
+            // Full docs on the response object can be found in the documentation
+            // for FB.getLoginStatus().
+            
+        }
+    </script>
+    
+    <div id="login_button" onclick="FB.login()">
+        <code id="app_label">getlikes()</code>
+        <p id="login_label">Login</p>
+    </div>
+    
+</body>
 </html>
