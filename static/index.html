@@ -63,12 +63,7 @@
          */
         var userID;
         var distribution = new Array();
-        
-        distribution["test"] = 0;
-        if (!distribution["test"])
-            console.log("not here");
-        
-        
+                
         /**
          * Method fbAsyncInit
          * Usage: auto run
@@ -147,6 +142,8 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
         
+        
+        document.getElementById("login_button").onclick = FB.login();
         
         /*=========== CUSTOM METHODS ========== */
         
@@ -227,18 +224,18 @@
                     {
                         var timeStr = convertTimestamp(response.data[i].updated_time);
                         
-                        //if (!distribution[timeStr])
-                        //    distribution[timeStr] = 0;
-                        //distribution[timeStr] += response.data[i].likes.data.length;
+                        if (distribution[timeStr] == undefined)
+                            distribution[timeStr] = 0;
+                        distribution[timeStr] += response.data[i].likes.data.length;
                     }
-                    distribution.sort();
-                    console.log(distribution);
+                    
+                    console.log(distribution[0100]);
                 }
             });
         }
     </script>
     
-    <div id="login_button" onclick="FB.login()">
+    <div id="login_button">
         <code id="app_label">getlikes()</code>
         <p id="login_label">Login</p>
     </div>
