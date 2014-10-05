@@ -39,7 +39,7 @@
             -webit-transition-duration: 0.5s;
         }
         
-        #login_label {
+        #login_label, #logout_label {
             font-size: 36px;
         }
         
@@ -56,13 +56,31 @@
 <body>
     
     <script>
+    $( document ).ready(function(){
         /*
          * Instance Variables 
          *
          * Required in the parsing
          */
         var userID;
+        var loggedIn = false;
         var distribution = new Array();
+        
+        $("#logout_label").css("display","none");
+        
+        function changeButton()
+        {            
+            if (loggedIn)
+            {
+                $("#login_label").css("display", "none");
+                $("#logout_label").css("display", "block");
+            }
+            else
+            {
+                $("#login_label").css("display", "block");
+                $("#logout_label").css("display", "none");
+            }
+        };
                 
         /**
          * Method fbAsyncInit
@@ -110,7 +128,8 @@
                 if (response.status === "connected")
                 {
                     userID = response.authResponse.userID;
-                    
+                    loggedIn = true;
+                    changeButton();
                     calcTime();
                 }
             });
@@ -141,9 +160,6 @@
             js.src = "//connect.facebook.net/en_US/sdk.js";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
-        
-        
-        document.getElementById("login_button").onclick = FB.login();
         
         /*=========== CUSTOM METHODS ========== */
         
@@ -233,11 +249,13 @@
                 }
             });
         }
+    });
     </script>
     
-    <div id="login_button">
+    <div id="login_button" onclick="FB.login">
         <code id="app_label">getlikes()</code>
         <p id="login_label">Login</p>
+        <p id="logout_label">Logout</p>
     </div>
     
 </body>
