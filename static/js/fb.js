@@ -4,9 +4,19 @@ $(document).ready(function(){
      *
      * Required in the parsing
      */
+<<<<<<< HEAD
     var userID, loggedIn = false, distribution = [];
     
     
+=======
+    var userID;
+    var loggedIn = false;
+    var distribution = new Array();
+    
+    
+    $("div").get(-1).style.display = "none";
+    
+>>>>>>> Dennis
     /* ======= FACEBOOK SDK LOAD =========== */
     
     /**
