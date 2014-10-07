@@ -6,10 +6,10 @@ Change Log
 
 `Version 0.10`
 
-`Date: Tuesday, October 7, 2014`
-`Editor: Dennis Moon`
+Dennis Moon
+Tuesday, October 7, 2014
 
-Facebook App:
+**Facebook App:**
 
 	* Added new test app "getlikes - Dennis"
 	* Set "getlikes - Dennis" siteURL as "http://www-scf.usc.edu/~bohuimoo/"
