@@ -28,7 +28,8 @@ $(document).ready(function(){
          * by using its appID, cookies, and FB SDK version
          */
         FB.init({
-            appId      : '1557277457835280',
+            //appId      : '1557277457835280', //Master
+            appId      : '1558391657723860', //Dennis
             cookie     : true,
             xfbml      : true,
             version    : 'v2.1'
