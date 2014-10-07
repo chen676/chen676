@@ -16,9 +16,15 @@ Notes
  First, change the appId in `/js/fb.js` to your test appId (comment out mine and master)
  Now you can make whatever changes you wish here  
  When you want to save this change, go through the usual `git add -A` and `git commit -m`  
- Uploading is `git push origin {yourname}` syncing it to your branch and not master
+ Uploading is `git push origin {yourname}` syncing it to your branch, not master  
+ To go back to master `git checkout master`
+ Merge your changes into master by `git merge {yourname}`
+ 
+> Find a website you can host on. I'm using the one USC provides, which Berkeley will probably have as well. Follow Berkeley's instructions and simply upload the contents under `/static`.  
+Test the app, it should be fine. 
 
-> Now go to the Facebook developers page.
+> Also, those of you who wish to continue, read up on writing .md files (like this one)
+ And update to README.md and changelog.txt
  
 Facebook App
 >Added new test app "getlikes - Dennis"  
