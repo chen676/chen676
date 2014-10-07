@@ -1,7 +1,8 @@
 getlikes
 ========
 
-getLikes()
+Version 0.10
 
-
-DEFAULT TIME: 18:00:00 EST (if all else fails)
+Date: Tuesday, October 7, 2014
+Editor: Dennis Moon
+-------------------------
