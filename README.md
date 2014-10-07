@@ -4,11 +4,11 @@ getlikes
 Change Log
 ----------
 
-h3. Version 0.10
+`Version 0.10`
 
-Date: Tuesday, October 7, 2014
+`Date: Tuesday, October 7, 2014`
 
-Editor: Dennis Moon
+`Editor: Dennis Moon`
 
 Facebook App:
 
