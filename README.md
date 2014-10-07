@@ -17,7 +17,10 @@ Facebook App:
 
 Added:
 
-	* Arbitrary Version number. Whole number for major reworks, tenths for feature addition, hundreths for bug fixes.
+	* Arbitrary Version number
+    * Whole number for major reworks, tenths for feature addition, hundreths for bug fixes.
+    * README should only contain newest version features
+    * changelog.txt is to be compilation of all version features
 	* /js folder under /static
 	* /fb.js file under /js
 	* fb.js file now uses "getlikes - Dennis" appId
