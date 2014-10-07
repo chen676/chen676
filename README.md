@@ -1,9 +1,8 @@
 Version 0.10
 ------------
 
-Dennis Moon
-
-Tuesday, October 7, 2014
+`Dennis Moon`  
+`Tuesday, October 7, 2014`
 
 Facebook App:
 
