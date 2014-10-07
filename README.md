@@ -10,9 +10,9 @@ Notes
  On the side is a tab called `Test Apps`  
  Create your own test app and store the appId  
  
-> Now on GitHub, branch from the master as `{yourname}`.  
- On your OS terminal, run `git branch `{yourname}`  
- Then switch to the branch with `git checkout {yourname}`  
+> Now on GitHub, branch from the master as `{yourname}`  
+ On your OS terminal, run `git branch `{yourname}`   
+ Then switch to the branch with `git checkout {yourname}`   
  First, change the appId in `/js/fb.js` to your test appId (comment out mine and master)
  Now you can make whatever changes you wish here  
  When you want to save this change, go through the usual `git add -A` and `git commit -m`  
