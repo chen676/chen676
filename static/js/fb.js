@@ -9,6 +9,8 @@ $(document).ready(function(){
     var distribution = new Array();
     
     
+    $("div").get(-1).style.display = "none";
+    
     /* ======= FACEBOOK SDK LOAD =========== */
     
     /**
