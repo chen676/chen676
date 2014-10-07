@@ -1,7 +1,5 @@
-getlikes
-========
-
-**`Version 0.10`**
+Version 0.10
+------------
 
 Dennis Moon
 
