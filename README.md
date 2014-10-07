@@ -6,18 +6,17 @@ Version 0.10
 
 Facebook App
 > Added new test app "getlikes - Dennis"  
-> Set "getlikes - Dennis" siteURL as "http://www-scf.usc.edu/~bohuimoo/"
+ Set "getlikes - Dennis" siteURL as "http://www-scf.usc.edu/~bohuimoo/"
 
-Added:
-
-	* Arbitrary Version number
-    * Whole number for major reworks, tenths for feature addition, hundreths for bug fixes.
-    * README should only contain newest version features
-    * changelog.txt is to be compilation of all version features
-	* /js folder under /static
-	* /fb.js file under /js
-	* fb.js file now uses "getlikes - Dennis" appId
-	* PERSONAL: code to hide USC disclaimer at bottom of website
+Added
+> Arbitrary Version number  
+> Whole number for major reworks, tenths for feature addition, hundreths for bug fixes.  
+> README should only contain newest version features  
+> changelog.txt is to be compilation of all version features  
+> /js folder under /static  
+> /fb.js file under /js  
+> fb.js file now uses "getlikes - Dennis" appId  
+> PERSONAL: code to hide USC disclaimer at bottom of website  
 	
 Removed:
 
