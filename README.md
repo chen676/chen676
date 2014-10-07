@@ -4,7 +4,7 @@ getlikes
 Change Log
 ----------
 
-`Version 0.10`
+h3. Version 0.10
 
 Date: Tuesday, October 7, 2014
 
